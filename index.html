@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Prática Módulo 13</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="lib/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<!-- A entrega deste exercício consiste em:
+
+• Criar um projeto utilizando o Bootstrap;
+
+• Crie uma página que contenha os elementos:
+
+• Carrossel de imagens;
+
+• Um layout com grid, onde na visão desktop temos 3 itens por linha, no tablet 2 itens por linha e no smartphone 1 item por linha;
+
+• Inserir um cartão dentro das colunas, o conteúdo do cartão fica a seu exclusivo; -->    
+    <body>
+<!--BARRA DE NAVEGAÇÃO
+        <header>
+            <div class="navbar navbar-expand-lg">
+                <h1>Carrossel EBAC</h1>
+                <div class="container2">
+                    <button type="button" class="nav navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                        <ul class="nav nav-pills navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active"  href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"  href="#">Produtos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a  class="nav-link" href="#">Promoções</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header> -->
+
+<!-- CARROSSEL-->
+        <div class="container">
+            <div class="container-carousel">
+                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img src="https://th.bing.com/th/id/OIG.PDpRcbrO49TrRshgEP63?pid=ImgGn" class="d-block w-100" alt="Uma família de ursos em uma toca">
+                            <div class="carousel-caption">
+                                <h2>Bear family</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img src="https://th.bing.com/th/id/OIG3.EokPJ5GJ3M7kaVqR9hNs?pid=ImgGn"  class="d-block w-100" alt="Borboleta sob folhas em galho">
+                            <div class="carousel-caption">
+                                <h2>Butterfly under leaves</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img src="https://th.bing.com/th/id/OIG.MxQxUggA0RKmKdTjwAqw?pid=ImgGn" class="d-block w-100" alt="Uma raposa em uma floresa andando em um cmainho com folhas caidas">
+                            <div class="carousel-caption">
+                                <h2>Fox in a forest</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botões de Navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-exemplo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-exemplo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--CARTÕES-->   
+        <div class="container1">
+            <div class="row">
+                <div class="col-4">
+                    <article class="card">
+                        <header class="card-header">
+                            <strong>Dream Travel Package</strong> 
+                        </header>
+                        <img src="imagens/Unicornio.jpg" alt="Um unicórnio branco em um vale em outono, com arco-íris">
+                        <div class="card-body">
+                            <h4 class="card-title">Unicórnio Mágico</h4>
+                            <p class="card-text">
+                                Descubra a magia do nosso destino de viagem mais recente! Venha viver seu próprio conto de fadas por apenas <strong>1 BTC (R$ 258.659,00)</strong>. 
+                            </p>
+                            <a href="#" class="btn btn-custom">Reserve agora</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="card">
+                        <header class="card-header">
+                            <strong>Dream Travel Package</strong> 
+                        </header>
+                        <img src="imagens/Transivania.jpg" alt="Um unicórnio branco em um vale em outono, com arco-íris">
+                        <div class="card-body">
+                            <h4 class="card-title">Castelo Gótico</h4>
+                            <p class="card-text">
+                                Embarque em uma jornada inesquecível ao castelo do Conde. Não perca esta experiência única <strong>0.5 BTC (R$ 129.473,00)</strong>.
+                            </p>
+                            <a href="#" class="btn btn-custom">Reserve agora</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="card">
+                        <header class="card-header">
+                            <strong>Dream Travel Package</strong> 
+                        </header>
+                        <img src="imagens/ValeNeve.jpg" alt="Um unicórnio branco em um vale em outono, com arco-íris">
+                        <div class="card-body">
+                            <h4 class="card-title">Paraíso Invernal</h4>
+                            <p class="card-text">
+                                As casas aconchegantes, a pista de patinação iluminada e a atmosfera encantadora esperam por você. Por apenas <strong>1.5 BTC (R$ 389.029,50)</strong>.
+                            </p>
+                            <a href="#" class="btn btn-custom">Reserve agora</a>
+                        </div>
+                    </article>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+        
+        <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

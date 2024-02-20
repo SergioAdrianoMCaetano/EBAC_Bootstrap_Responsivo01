@@ -1,0 +1,84 @@
+body{
+    background-color: #F0FFF5;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+
+.navbar-nav .nav-link.active{
+    color: #fff;
+}
+
+.nav-link{
+    text-align: center;
+}
+
+/*LAYOUT CENTRALIZADO PARA TODOS OS DISPOSITIVOS*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da viewport */
+}
+
+.container .container-carousel {
+    max-width: 100%; /* O carrossel ocupará o máximo de largura possível */
+}
+
+/* APLICAR ESTILIZAÇÃO AO CONTAINER CARROSSEL TODO*/
+.container-carousel{ 
+    width: 500px;
+    height: 550px;
+    margin: 0 auto; /*centraliza a div na página*/
+    padding-top: 20px;
+}
+
+.container-carousel .carousel-item img{
+    width: 50%; 
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço disponível, cortando se necessário */
+}
+
+/*Estilizar os ícones (fundo nos ícones) e indicadores (arredondálos)*/
+.carousel-control-prev-icon, 
+.carousel-control-next-icon{ 
+    width: 2em;
+    height: 2em;
+    background-color: black;
+}
+
+.carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+}
+
+/*LAYOUT CARTÕES*/
+.container1 {
+    padding-top: 7em;
+    padding-bottom: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da viewport */
+    width: 100%;
+}
+
+.card{
+    width: 100%;
+    max-width: 400px; /* Largura máxima dos cartões */
+    text-align: center;
+    
+}
+
+.card-header{
+    text-align: center; /* Alinhamento do cabeçalho no centro */
+}
+
+.btn-custom{
+    background-color: #191970;
+    color: #fff;
+}
+
+
+
